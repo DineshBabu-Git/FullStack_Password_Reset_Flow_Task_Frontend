@@ -29,7 +29,7 @@ function ForgotPassword() {
   };
 
   return (
-    <div className="flex h-screen justify-center items-center bg-gray-200">
+    <div className="flex h-screen justify-center items-center bg-gray-200 flex-col gap-4">
       <div className="p-6 shadow-lg rounded-xl w-80 bg-gray-50 border border-gray-300">
         <h2 className="text-xl font-bold mb-4 text-center">
           Forgot Password
@@ -48,8 +48,17 @@ function ForgotPassword() {
         >
           Send Reset Link
         </button>
+
       </div>
+
+      <div className="p-6 shadow-lg w-3/4 rounded-xl bg-gray-50 border border-gray-300">
+        <p className="text-sm text-gray-600 text-center font-bold">⚠️Email Service Note :</p>
+        <p className="mt-4 text-sm text-gray-600 text-center break-all"><u>Instead of Gmail, <a href="https://mailtrap.io/" target="_blank">Mailtrap SMTP</a> is used for this Project</u> for reliable testing since Gmail SMTP is blocked while deployment on Render free tier due to its new updated policies.<br></br>(Already mentioned in GitHub ReadMe file.)
+        </p>
+      </div>
+
     </div>
+
   );
 }
 
