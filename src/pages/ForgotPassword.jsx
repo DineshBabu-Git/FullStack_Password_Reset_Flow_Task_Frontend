@@ -86,7 +86,7 @@ function ForgotPassword() {
               href="https://mailtrap.io/"
               target="_blank"
               rel="noreferrer"
-              className="text-purple-600 font-bold"
+              className="text-purple-600 font-semibold"
             >
               Mailtrap SMTP
             </a>{" "}
