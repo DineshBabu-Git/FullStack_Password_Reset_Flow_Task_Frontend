@@ -81,7 +81,15 @@ function ForgotPassword() {
         </p>
         <p className="mt-4 text-sm text-gray-600 text-center break-all">
           <u>
-            Instead of Gmail,{" "}
+            Check Received Emails in
+            <a
+              href="https://mailtrap.io/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-purple-600 font-semibold"
+            >
+              https://mailtrap.io/
+            </a>{" "}. Instead of Gmail,{" "}
             <a
               href="https://mailtrap.io/"
               target="_blank"
@@ -90,7 +98,7 @@ function ForgotPassword() {
             >
               Mailtrap SMTP
             </a>{" "}
-            is used for this project
+            is used for this project for reliable testing since Gmail SMTP is blocked on Render free tier due to updated policies.
           </u>
           <br />
           (Mentioned in GitHub README)
