@@ -46,7 +46,7 @@ function ForgotPassword() {
           onClick={handleSubmit}
           className="bg-purple-600 text-white w-full py-2 rounded cursor-pointer font-semibold hover:bg-purple-700 transition-colors"
         >
-          Send Reset Link
+          Send Email
         </button>
 
       </div>
