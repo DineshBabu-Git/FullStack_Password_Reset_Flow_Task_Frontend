@@ -77,31 +77,10 @@ function ForgotPassword() {
 
       <div className="p-6 shadow-lg w-3/4 rounded-xl bg-gray-50 border border-gray-300">
         <p className="text-sm text-gray-600 text-center font-bold">
-          ⚠️ Email Service Note :
+          ⚠️ Email Notice :
         </p>
         <p className="mt-4 text-sm text-gray-600 text-center break-all">
-          <u>
-            Check Received Emails in
-            <a
-              href="https://mailtrap.io/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-purple-600 font-semibold"
-            >
-              https://mailtrap.io/
-            </a>{" "}. Instead of Gmail,{" "}
-            <a
-              href="https://mailtrap.io/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-purple-600 font-semibold"
-            >
-              Mailtrap SMTP
-            </a>{" "}
-            is used for this project for reliable testing since Gmail SMTP is blocked on Render free tier due to updated policies.
-          </u>
-          <br />
-          (Mentioned in GitHub README)
+          Check Email in Spam Folder if it is not found in the Inbox.
         </p>
       </div>
 
