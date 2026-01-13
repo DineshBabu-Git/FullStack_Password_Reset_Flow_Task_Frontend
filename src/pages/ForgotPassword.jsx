@@ -75,7 +75,7 @@ function ForgotPassword() {
         )}
       </div>
 
-      <div className="p-6 shadow-lg w-3/4 rounded-xl bg-gray-50 border border-gray-300">
+      <div className="p-6 shadow-lg w-1/4 rounded-xl bg-gray-50 border border-gray-300">
         <p className="text-sm text-gray-600 text-center font-bold">
           ⚠️ Email Notice :
         </p>
