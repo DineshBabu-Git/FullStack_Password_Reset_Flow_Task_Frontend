@@ -75,15 +75,6 @@ function ForgotPassword() {
         )}
       </div>
 
-      <div className="p-6 shadow-lg w-1/4 rounded-xl bg-gray-50 border border-gray-300">
-        <p className="text-sm text-gray-600 text-center font-bold">
-          ⚠️ Email Notice :
-        </p>
-        <p className="mt-4 text-sm text-gray-600 text-center break-words">
-          Please use Genuine Working emails. Don't use Fake or Temproary Emails which leads to Failure. Check Email in Spam Folder if it is not found in the Inbox.
-        </p>
-      </div>
-
     </div>
   );
 }
