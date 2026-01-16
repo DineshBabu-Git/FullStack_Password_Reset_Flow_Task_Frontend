@@ -83,7 +83,7 @@ function ResetPassword() {
                     disabled={loading}
                     className="bg-green-600 text-white w-full py-2 rounded font-semibold hover:bg-green-700 disabled:opacity-50"
                 >
-                    {loading ? "Resetting..." : "Reset Password"}
+                    {loading ? "Resetting Password..." : "Reset Password"}
                 </button>
             </div>
         </div>
