@@ -5,8 +5,11 @@ import { Link } from "react-router-dom";
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [loading, setLoading] = useState(false);
 
     const handleLogin = async () => {
+        setLoading(true);
+
         try {
             const res = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/login`, {
                 method: "POST",
@@ -24,6 +27,8 @@ function Login() {
             alert(data.message || "Login successful");
         } catch (error) {
             alert("Server not reachable. Please try again later.");
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -48,9 +53,10 @@ function Login() {
 
                 <button
                     onClick={handleLogin}
+                    disabled={loading}
                     className="bg-blue-600 text-white w-full py-2 rounded mb-3 cursor-pointer font-semibold hover:bg-blue-700 transition-colors"
                 >
-                    Login
+                    {loading ? "Logging in..." : "Login"}
                 </button>
 
                 <div className="text-sm text-center">

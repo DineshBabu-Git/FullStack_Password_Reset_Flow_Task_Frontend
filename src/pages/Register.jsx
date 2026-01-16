@@ -6,8 +6,11 @@ function Register() {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [loading, setLoading] = useState(false);
 
     const handleRegister = async () => {
+        setLoading(true);
+
         try {
             const res = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/register`, {
                 method: "POST",
@@ -19,12 +22,15 @@ function Register() {
 
             if (!res.ok) {
                 alert(data.message || "Registration failed");
+                setLoading(false);
                 return;
             }
 
             alert(data.message || "Registration successful");
         } catch (error) {
             alert("Server not reachable. Please try again later.");
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -58,9 +64,10 @@ function Register() {
 
                 <button
                     onClick={handleRegister}
+                    disabled={loading}
                     className="bg-green-600 text-white w-full py-2 rounded mb-3 cursor-pointer font-semibold hover:bg-green-700 transition-colors"
                 >
-                    Register
+                    {loading ? "Registering..." : "Register"}
                 </button>
 
                 <div className="text-sm text-center">

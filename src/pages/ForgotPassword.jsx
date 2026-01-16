@@ -27,6 +27,7 @@ function ForgotPassword() {
 
       if (!res.ok) {
         alert(data.message || "Failed to send reset link");
+        setLoading(false);
         return;
       }
 
